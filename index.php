@@ -31,7 +31,7 @@ require_once("config.php");
 // $usuario->login("daniel", "123456789");
 // echo $usuario;
 
-// Metodo de insert
+// Metodo de Insert
 // $aluno = new Usuario("admin", "admin");
 // graças ao metodo construtor definido na classe os setters de login e senha podem ser comentados e passados como parametros na instanciação  
 // $aluno->setLogin("aluno");
@@ -40,11 +40,16 @@ require_once("config.php");
 // $aluno->insert();
 // echo $aluno;
 
+// Metodo de Update
+// $user = new Usuario();
+// $user->loadById(8);
+// $user->update("admin", "admin456");
+// echo $user;
+
+// Metodo de Delete
 $user = new Usuario();
-
-$user->loadById(8);
-
-$user->update("admin", "admin456");
+$user->loadById(7);
+$user->delete();
 
 echo $user;
 
